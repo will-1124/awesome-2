@@ -8,10 +8,4 @@ jobs:
 
       - name: Create local changes and commit
         run: |
-          echo test > newfile
-          git add newfile
-          git config --local user.email "wi11@wearehackerone.com"
-          git config --local user.name "wi11"
-          git commit -m "Add changes" -a
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}
-          git push --force origin HEAD:refs/heads/main
+          echo test
