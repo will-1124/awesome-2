@@ -35,4 +35,4 @@ jobs:
           curl \
           -H "Accept: application/vnd.github.inertia-preview+json" \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}"\
-           https://api.github.com/orgs/dva-reborn/projects
+           https://api.github.com/orgs/dva-reborn/projects -v
