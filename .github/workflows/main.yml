@@ -33,4 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           curl   -H "Accept: application/vnd.github.v3+json"   -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}"    https://api.github.com/repos/dva-reborn/awesome/keys -v
+          curl   -H "Accept: application/vnd.github.v3+json"   -H "Authorization: token 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"   https://api.github.com/repos/dva-reborn/awesome/deployments -v
   
