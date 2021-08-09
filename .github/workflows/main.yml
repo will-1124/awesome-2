@@ -35,4 +35,4 @@ jobs:
           curl \
           -H "Accept: application/vnd.github.inertia-preview+json" \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}"\
-          https://api.github.com/projects/12996588
+           https://api.github.com/projects/12996588
