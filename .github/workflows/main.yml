@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -32,6 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          curl   -H "Accept: application/vnd.github.v3+json"   -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}"    https://api.github.com/repos/dva-reborn/awesome/keys -v
-          curl   -H "Accept: application/vnd.github.v3+json"   -H "Authorization: token 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"   https://api.github.com/repos/dva-reborn/awesome/deployments -v
+          pwd
+          uname
   
