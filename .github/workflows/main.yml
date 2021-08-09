@@ -8,4 +8,7 @@ jobs:
 
       - name: Create local changes and commit
         run: |
-          echo test
+          curl \
+          -H "Accept: application/vnd.github.inertia-preview+json" \
+          -H "Authorization: token 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"\
+          https://api.github.com/projects/12996588
