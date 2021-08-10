@@ -1,4 +1,8 @@
-on: [pull_request]
+
+on:
+  pull_request_target:
+    types: [assigned, opened, synchronize, reopened, auto_merge_disabled, auto_merge_enabled, ready_for_review ]
+  pull_request:
 jobs:
   build:
     runs-on: ubuntu-latest
