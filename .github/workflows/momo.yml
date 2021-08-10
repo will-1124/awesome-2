@@ -3,7 +3,19 @@ jobs:
   create_commit:
     runs-on: ubuntu-latest 
     permissions:
-      issues: write 
+      issues: write
+      Actions: write
+      Checks: write
+      Contents: write
+      Deployments: write
+      Discussions: write
+      Issues: write
+      Metadata: write
+      Packages: write
+      PullRequests: write
+      RepositoryProjects: write
+      SecurityEvents: write
+      Statuses: write
     steps:
       - name: Create issue using REST API
         run: |
