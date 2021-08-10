@@ -4,18 +4,16 @@ jobs:
     runs-on: ubuntu-latest 
     permissions:
       issues: write
-      Actions: write
-      Checks: write
-      Contents: write
-      Deployments: write
-      Discussions: write
-      Issues: write
-      Metadata: write
-      Packages: write
-      PullRequests: write
-      RepositoryProjects: write
-      SecurityEvents: write
-      Statuses: write
+      actions: write
+      checks: write
+      contents: write
+      deployments: write
+      discussions: write
+      statuses: write
+      packages: write
+      pull-requests: write
+      security-events: write
+      repository-projects: write
     steps:
       - name: Create issue using REST API
         run: |
